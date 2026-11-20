@@ -186,6 +186,7 @@ server <- function(input, output, session) {
     nrow(datos())
   })
   
+  ## Armo el output de habilitados
   output$habilitados <- renderText({
     format(sum(datos()$habilitados), big.mark = ".", decimal.mark = ",")
   })
