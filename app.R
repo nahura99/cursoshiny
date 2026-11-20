@@ -190,6 +190,7 @@ server <- function(input, output, session) {
     format(sum(datos()$habilitados), big.mark = ".", decimal.mark = ",")
   })
   
+  ## Aqui hago el output de emitidos
   output$emitidos <- renderText({
     format(sum(datos()$emitidos), big.mark = ".", decimal.mark = ",")
   })
